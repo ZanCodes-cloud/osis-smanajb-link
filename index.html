@@ -2,136 +2,85 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OSIS SMAN Ajibarang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSIS SMAN 1 AJIBARANG</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
     body {
+      background: url('Background linktre.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: white;
       text-align: center;
-      background: url('data:image/jpeg;base64,{{GANTI_DENGAN_BASE64_BACKGROUND}}') no-repeat center center/cover;
-      background-attachment: fixed;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
-      max-width: 400px;
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      animation: fadeIn 1.5s ease;
+      color: white;
     }
 
     .logo {
+      margin-top: 40px;
       width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-      animation: float 3s ease-in-out infinite;
+      height: auto;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+    }
+
+    .banner {
+      margin-top: 10px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
     }
 
     h1 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 10px;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      font-size: 1.2rem;
+      margin-top: 20px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
     }
 
     .links {
-      width: 100%;
+      margin-top: 30px;
+      width: 80%;
+      max-width: 400px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-top: 20px;
+      gap: 15px;
     }
 
-    .link {
-      display: block;
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      color: white;
-      padding: 12px 0;
-      border-radius: 25px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(4px);
+      background: rgba(0, 0, 50, 0.6);
+      color: #fff;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 0 8px rgba(255,255,255,0.2);
+      transition: 0.2s;
     }
 
-    .link:hover {
-      background: rgba(255, 255, 255, 0.3);
+    .links a:hover {
+      background: rgba(255, 215, 0, 0.8);
+      color: #000;
       transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8rem;
-      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="container">
-    <img src="data:image/jpeg;base64,{{GANTI_DENGAN_BASE64_LOGO}}" alt="Logo OSIS" class="logo" />
-    <h1>OSIS SMAN NEGERI 1 AJIBARANG</h1>
+  <img src="Logo Osis SMANA.jpg" alt="Logo OSIS" class="logo">
+  <img src="banner pengurus.jpg" alt="Banner OSIS" class="banner">
 
-    <div class="links">
-      <a href="https://www.instagram.com/osis_smanajb?igsh=cGh4cWFpMnp3enV6" class="link">Instagram</a>
-      <a href="https://www.tiktok.com/@osis_smanaajb?_r=1&_t=ZS-910e84rYNSm" class="link">TikTok</a>
-      <a href="https://youtube.com/@osissmanegeri1ajibarang?si=L5KIggUCOxOfvIBw" class="link">YouTube</a>
-      <a href="https://open.spotify.com/user/31bqsqtlkvasuzw4bkh63uciwt4e?si=L5WHDsReTP-l-ZMPF3OihA" class="link">Spotify</a>
-      <a href="https://x.com/osis_smanajb?t=eNN3lw9hrJ74D5M5af55Wg&s=09" class="link">X (Twitter)</a>
-      <a href="https://wa.me/6285803582817" class="link">WA Naufal Dwi Arif</a>
-      <a href="https://wa.me/6282136063240" class="link">WA Sania Isyfi Kufaila</a>
-    </div>
+  <div class="links">
+    <a href="https://www.instagram.com/osis_smanajb">Instagram</a>
+    <a href="https://www.tiktok.com/@osis_smanajb">TikTok</a>
+    <a href="https://www.youtube.com/@osis_smanajb">YouTube</a>
+    <a href="https://open.spotify.com/user/31bqsqtlkvasuzw4bkh63uciwt4e?si=L5WHDsReTP-l-ZMPF3OihA">Spotify</a>
+    <a href="https://x.com/osis_smanajb?t=eNN3lw9hrJ74D5M5af55Wg&s=09">Twitter (X)</a>
+    <a href="https://wa.me/6285803582817">WA Naufal Dwi Arif</a>
+    <a href="https://wa.me/6282136063240">WA Sania Isyfi Kufaila</a>
   </div>
-
-  <footer>© 2025 OSIS SMAN Ajibarang</footer>
-
-  <script>
-    // Animasi ringan
-    document.querySelectorAll('.link').forEach(link => {
-      link.addEventListener('mouseenter', () => {
-        link.style.boxShadow = '0 0 20px rgba(255,255,255,0.5)';
-      });
-      link.addEventListener('mouseleave', () => {
-        link.style.boxShadow = 'none';
-      });
-    });
-  </script>
 </body>
 </html>
